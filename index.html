@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ha" class="scroll-smooth">
+<head>
+    <meta name="description" content="Setgy Engineering & Solar Technologies na samar da nagartattun ayyukan solar, inverter, da gyaran kayan wuta a da Kano, Nigeria.">
+<meta name="keywords" content="Setgy Engineering, Solar Technologies, Solar Installation kano, Inverter Battery Kano, Engr Ibrahim Isah sheka,">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setgy Engineering & Solar Technologies</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        solarYellow: '#F59E0B',
+                        solarGold: '#D97706',
+                        techBlue: '#0F172A',
+                        techNavy: '#1E293B',
+                        solarGreen: '#10B981',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="bg-techBlue text-white fixed w-full z-50 shadow-lg top-0 left-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-solarYellow p-2 rounded-lg text-techBlue font-bold text-2xl">
+                        <i class="fa-solid fa-solar-panel"></i>
+                    </div>
+                    <div>
+                        <span class="font-bold text-xl tracking-wide block leading-none">SETGY</span>
+                        <span class="text-xs text-solarYellow tracking-widest block font-semibold">ENGINEERING & SOLAR</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex space-x-6 font-medium text-sm">
+                    <a href="#home" class="hover:text-solarYellow transition">Gida</a>
+                    <a href="#about" class="hover:text-solarYellow transition">Game da Mu</a>
+                    <a href="#services" class="hover:text-solarYellow transition">Ayyukanmu</a>
+                    <a href="#projects" class="hover:text-solarYellow transition">Tarihin Ayyuka</a>
+                    <a href="#metrics" class="hover:text-solarYellow transition">Girma & Jari</a>
+                    <a href="#team" class="hover:text-solarYellow transition">Ma'aikata</a>
+                    <a href="#calculator" class="hover:text-solarYellow transition">Solar Calculator</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="#contact" class="bg-solarYellow hover:bg-solarGold text-techBlue font-bold px-5 py-2.5 rounded-lg transition text-sm shadow-md">
+                        Tuntube Mu
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="menuBtn" class="text-gray-300 hover:text-white focus:outline-none text-2xl">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-techNavy px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block text-gray-200 hover:text-solarYellow">Gida</a>
+            <a href="#about" class="block text-gray-200 hover:text-solarYellow">Game da Mu</a>
+            <a href="#services" class="block text-gray-200 hover:text-solarYellow">Ayyukanmu</a>
+            <a href="#projects" class="block text-gray-200 hover:text-solarYellow">Tarihin Ayyuka</a>
+            <a href="#metrics" class="block text-gray-200 hover:text-solarYellow">Girma & Jari</a>
+            <a href="#team" class="block text-gray-200 hover:text-solarYellow">Ma'aikata</a>
+            <a href="#calculator" class="block text-gray-200 hover:text-solarYellow">Solar Calculator</a>
+            <a href="#contact" class="block bg-solarYellow text-techBlue text-center font-bold py-2 rounded-lg">Tuntube Mu</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="pt-28 pb-20 bg-gradient-to-br from-techBlue via-techNavy to-gray-900 text-white min-h-[85vh] flex items-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="bg-solarYellow/20 text-solarYellow border border-solarYellow/40 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                    Kamfanin Inganta Wutar Lantarki & Solar
+                </span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold mt-4 leading-tight">
+                    Maganin Wutar Lantarki Mai Dorewa Da Dogaro
+                </h1>
+                <p class="mt-4 text-gray-300 text-base sm:text-lg leading-relaxed">
+                    Setgy Engineering & Solar Technologies na samar da nagartattun ayyukan sanya Solar, gyaran kayan wutar lantarki, da kera hanyoyin wuta na zamani domin gidaje, kamfanoni, da gonaki.
+                </p>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <a href="#calculator" class="bg-solarYellow hover:bg-solarGold text-techBlue font-bold px-6 py-3 rounded-xl transition shadow-lg flex items-center space-x-2">
+                        <i class="fa-solid fa-calculator"></i>
+                        <span>Lissafa Nauyin Solarka</span>
+                    </a>
+                    <a href="#projects" class="border border-gray-400 hover:border-solarYellow text-white font-semibold px-6 py-3 rounded-xl transition flex items-center space-x-2">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Duba Ayyukanmu</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="bg-gradient-to-tr from-solarYellow to-solarGreen p-1 rounded-2xl shadow-2xl">
+                    <div class="bg-techNavy p-6 rounded-xl space-y-4">
+                        <div class="flex items-center space-x-4 border-b border-gray-700 pb-4">
+                            <i class="fa-solid fa-bolt text-solarYellow text-3xl"></i>
+                            <div>
+                                <h3 class="font-bold text-lg">Inverter & Battery Systems</h3>
+                                <p class="text-xs text-gray-400">Batir na Lithium Iron Phosphate (LiFePO4)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 border-b border-gray-700 pb-4">
+                            <i class="fa-solid fa-sun text-solarYellow text-3xl"></i>
+                            <div>
+                                <h3 class="font-bold text-lg">Solar Panels (Monocrystalline)</h3>
+                                <p class="text-xs text-gray-400">Masu karfin fito da wuta ko da babu haske sosai</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="fa-solid fa-gears text-solarYellow text-3xl"></i>
+                            <div>
+                                <h3 class="font-bold text-lg">Electrical Engineering</h3>
+                                <p class="text-xs text-gray-400">Ayyukan Waya da Tsaron Na'urori</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- METRICS & FINANCIALS -->
+    <section id="metrics" class="py-12 bg-solarYellow text-techBlue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 bg-white/40 rounded-xl backdrop-blur-sm">
+                    <h3 class="text-3xl sm:text-4xl font-extrabold">₦4.9M</h3>
+                    <p class="text-xs sm:text-sm font-semibold mt-1">Jarin Ayyuka (Capital/Valuation)</p>
+                </div>
+                <div class="p-4 bg-white/40 rounded-xl backdrop-blur-sm">
+                    <h3 class="text-3xl sm:text-4xl font-extrabold">150+</h3>
+                    <p class="text-xs sm:text-sm font-semibold mt-1">Ayyukan da Muka Kammala</p>
+                </div>
+                <div class="p-4 bg-white/40 rounded-xl backdrop-blur-sm">
+                    <h3 class="text-3xl sm:text-4xl font-extrabold">250kW+</h3>
+                    <p class="text-xs sm:text-sm font-semibold mt-1">Hasken Solar da Muka Sanya</p>
+                </div>
+                <div class="p-4 bg-white/40 rounded-xl backdrop-blur-sm">
+                    <h3 class="text-3xl sm:text-4xl font-extrabold">100%</h3>
+                    <p class="text-xs sm:text-sm font-semibold mt-1">Gamsuwar Abokan Ciniki</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold text-techBlue">Ayyukan da Muke Gudanarwa</h2>
+                <div class="w-16 h-1 bg-solarYellow mx-auto mt-2 rounded-full"></div>
+                <p class="text-gray-600 mt-4">Muna ba da cikakken tsarin fasahar solar da injiniyancin wutar lantarki.</p>
+            </div>
+
+            <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-6 bg-gray-50 border border-gray-100 rounded-2xl hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-solarYellow/20 text-solarGold flex items-center justify-center rounded-xl text-2xl font-bold mb-4">
+                        <i class="fa-solid fa-solar-panel"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-techBlue">Sanya Solar da Gyara</h3>
+                    <p class="text-gray-600 text-sm mt-2">Sanya monocrystalline da polycrystalline panels a gidaje, masana'antu da wuraren kasuwanci.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-6 bg-gray-50 border border-gray-100 rounded-2xl hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 flex items-center justify-center rounded-xl text-2xl font-bold mb-4">
+                        <i class="fa-solid fa-car-battery"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-techBlue">Inverter & Battery Setup</h3>
+                    <p class="text-gray-600 text-sm mt-2">Haɗa inverters masu amfani (Pure Sine Wave) da batir na Lithium Iron Phosphate (LiFePO4) ko Gel.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-6 bg-gray-50 border border-gray-100 rounded-2xl hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-green-100 text-green-600 flex items-center justify-center rounded-xl text-2xl font-bold mb-4">
+                        <i class="fa-solid fa-faucet-drip"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-techBlue">Solar Water Pumping</h3>
+                    <p class="text-gray-600 text-sm mt-2">Sanya pombun ruwa mai amfani da wutar rana domin gonaki (irrigation) da gidaje.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-6 bg-gray-50 border border-gray-100 rounded-2xl hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-yellow-100 text-yellow-600 flex items-center justify-center rounded-xl text-2xl font-bold mb-4">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-techBlue">Solar Street Lighting</h3>
+                    <p class="text-gray-600 text-sm mt-2">Sanya fitilun hanyoyi na solar masu sarrafa kansu a unguwanni, ma'arantu, da hanyoyi.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="p-6 bg-gray-50 border border-gray-100 rounded-2xl hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 flex items-center justify-center rounded-xl text-2xl font-bold mb-4">
+                        <i class="fa-solid fa-plug"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-techBlue">Ayyukan Waya (Electrical Wiring)</h3>
+                    <p class="text-gray-600 text-sm mt-2">Tsara da shimfida wayoyin wuta a sabbin gini da gyaran matsalar short-circuit.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="p-6 bg-gray-50 border border-gray-100 rounded-2xl hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-red-100 text-red-600 flex items-center justify-center rounded-xl text-2xl font-bold mb-4">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-techBlue">Maintenance & Technical Support</h3>
+                    <p class="text-gray-600 text-sm mt-2">Binciken na'urori na akai-akai da gyara kayan da kuka kera ko kuka sanya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS PORTFOLIO SECTION -->
+    <section id="projects" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold text-techBlue">Tarihin Ayyukanmu (Projects Portfolio)</h2>
+                <div class="w-16 h-1 bg-solarYellow mx-auto mt-2 rounded-full"></div>
+                <p class="text-gray-600 mt-4">Kalli daki-daki sakamakon manya da kananan ayyukan da kamfaninmu ya gudanar da nasara.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="flex justify-center mt-8 space-x-2">
+                <button onclick="filterProjects('all')" class="project-btn bg-techBlue text-white font-medium px-4 py-2 rounded-lg text-sm">Duk Ayyuka</button>
+                <button onclick="filterProjects('manya')" class="project-btn bg-white hover:bg-gray-200 text-gray-700 font-medium px-4 py-2 rounded-lg text-sm">Manya-Manya</button>
+                <button onclick="filterProjects('kanana')" class="project-btn bg-white hover:bg-gray-200 text-gray-700 font-medium px-4 py-2 rounded-lg text-sm">Kananan Ayyuka</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 (Manya) -->
+                <div class="project-card manya bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200">
+                    <div class="bg-techNavy text-solarYellow p-6 flex justify-between items-center">
+                        <i class="fa-solid fa-building text-3xl"></i>
+                        <span class="bg-solarYellow/20 text-solarYellow text-xs font-bold px-2.5 py-1 rounded">MANYA</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-techBlue">15kVA Commercial Solar System</h3>
+                        <p class="text-xs text-gray-500 mt-1"><i class="fa-solid fa-location-dot"></i> Shopping Complex, Kano</p>
+                        <p class="text-sm text-gray-600 mt-3">Tsarin Solar mai dauke da Inverter 15kVA, Batir Lithium 24kWh, da Monocrystalline panels guda 24 domin samar da wutar 24/7.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Manya) -->
+                <div class="project-card manya bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200">
+                    <div class="bg-techNavy text-solarYellow p-6 flex justify-between items-center">
+                        <i class="fa-solid fa-road text-3xl"></i>
+                        <span class="bg-solarYellow/20 text-solarYellow text-xs font-bold px-2.5 py-1 rounded">MANYA</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-techBlue">Community Solar Street Lighting</h3>
+                        <p class="text-xs text-gray-500 mt-1"><i class="fa-solid fa-location-dot"></i> Kubwa, Abuja</p>
+                        <p class="text-sm text-gray-600 mt-3">Shigar da fitilun solar guda 50 na zamani masu kunna kansu a daddare tare da kyamarorin tsaro.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Kanana) -->
+                <div class="project-card kanana bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200">
+                    <div class="bg-solarYellow text-techBlue p-6 flex justify-between items-center">
+                        <i class="fa-solid fa-house text-3xl"></i>
+                        <span class="bg-techBlue/20 text-techBlue text-xs font-bold px-2.5 py-1 rounded">KANANA</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-techBlue">3.5kVA Home Power Backup</h3>
+                        <p class="text-xs text-gray-500 mt-1"><i class="fa-solid fa-location-dot"></i> Maitama, Abuja</p>
+                        <p class="text-sm text-gray-600 mt-3">Kayan solar na gida mai amfani da gidan firiji, fanka, kyamarori, da fitilu ba tare da dauke wuta ba.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 (Manya) -->
+                <div class="project-card manya bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200">
+                    <div class="bg-techNavy text-solarYellow p-6 flex justify-between items-center">
+                        <i class="fa-solid fa-water text-3xl"></i>
+                        <span class="bg-solarYellow/20 text-solarYellow text-xs font-bold px-2.5 py-1 rounded">MANYA</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-techBlue">7.5HP Solar Water Pumping System</h3>
+                        <p class="text-xs text-gray-500 mt-1"><i class="fa-solid fa-location-dot"></i> Gwagwalada, Abuja</p>
+                        <p class="text-sm text-gray-600 mt-3">Pompam ruwa mai karfin doyin ruwa galan dubu 50 a rana domin ayyukan gona da fadar dabbobi.</p>
+                    </div>
+                </div>
+
+                <!-- Project 5 (Kanana) -->
+                <div class="project-card kanana bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200">
+                    <div class="bg-solarYellow text-techBlue p-6 flex justify-between items-center">
+                        <i class="fa-solid fa-store text-3xl"></i>
+                        <span class="bg-techBlue/20 text-techBlue text-xs font-bold px-2.5 py-1 rounded">KANANA</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-techBlue">2.5kVA Mini Bakery System</h3>
+                        <p class="text-xs text-gray-500 mt-1"><i class="fa-solid fa-location-dot"></i> Mararaba</p>
+                        <p class="text-sm text-gray-600 mt-3">Sanya tsarin wutar inverter da batir tubular domin tafiyar da na'urorin kefe da shago.</p>
+                    </div>
+                </div>
+
+                <!-- Project 6 (Kanana) -->
+                <div class="project-card kanana bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200">
+                    <div class="bg-solarYellow text-techBlue p-6 flex justify-between items-center">
+                        <i class="fa-solid fa-scissors text-3xl"></i>
+                        <span class="bg-techBlue/20 text-techBlue text-xs font-bold px-2.5 py-1 rounded">KANANA</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-techBlue">1.5kVA Tailoring & Barber Setup</h3>
+                        <p class="text-xs text-gray-500 mt-1"><i class="fa-solid fa-location-dot"></i> Keffi</p>
+                        <p class="text-sm text-gray-600 mt-3">Sauki da aminci ga kananan 'yan kasuwa domin aske gashi, keken dinki, da kunna TV a shago.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section id="team" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold text-techBlue">Shugabanni Da Ma'aikatanmu</h2>
+                <div class="w-16 h-1 bg-solarYellow mx-auto mt-2 rounded-full"></div>
+                <p class="text-gray-600 mt-4">Kwararrun ma'aikata da shugabanni masu jajircewa a Setgy Engineering.</p>
+            </div>
+
+            <!-- Executive Leadership -->
+            <div class="mt-12">
+                <h3 class="text-xl font-bold text-techNavy border-b border-gray-200 pb-2 mb-6">Manya Shugabanni (Executive Management)</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- CEO -->
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center shadow-sm hover:shadow-md transition">
+                        <div class="w-20 h-20 bg-techBlue text-solarYellow rounded-full flex items-center justify-center text-3xl mx-auto mb-4 font-bold">
+                            CEO
+                        </div>
+                        <h4 class="text-lg font-bold text-techBlue">Muhammad Umar</h4>
+                        <p class="text-xs font-semibold text-solarGold uppercase tracking-wider mt-1">Chief Executive Officer (CEO)</p>
+                        <p class="text-xs text-gray-500 mt-2">Babban Darakta kuma Shugaban gudanarwa na kamfani.</p>
+                    </div>
+
+                    <!-- CTO -->
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center shadow-sm hover:shadow-md transition">
+                        <div class="w-20 h-20 bg-techBlue text-solarYellow rounded-full flex items-center justify-center text-3xl mx-auto mb-4 font-bold">
+                            CTO
+                        </div>
+                        <h4 class="text-lg font-bold text-techBlue">Engr. Ibrahim Isah</h4>
+                        <p class="text-xs font-semibold text-solarGold uppercase tracking-wider mt-1">Chief Technology Officer (CTO)</p>
+                        <p class="text-xs text-gray-500 mt-2">Shugaban bangaren fasaha da tsarin ayyuka na kamfani.</p>
+                    </div>
+
+                    <!-- COO -->
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center shadow-sm hover:shadow-md transition">
+                        <div class="w-20 h-20 bg-techBlue text-solarYellow rounded-full flex items-center justify-center text-3xl mx-auto mb-4 font-bold">
+                            COO
+                        </div>
+                        <h4 class="text-lg font-bold text-techBlue">Yusuf Muhammad</h4>
+                        <p class="text-xs font-semibold text-solarGold uppercase tracking-wider mt-1">Chief Operating Officer (COO)</p>
+                        <p class="text-xs text-gray-500 mt-2">Shugaban gudanar da ayyukan yau da kullum da ci gaba.</p>
+                    </div>
+
+                    <!-- Product Manager -->
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center shadow-sm hover:shadow-md transition">
+                        <div class="w-20 h-20 bg-techBlue text-solarYellow rounded-full flex items-center justify-center text-3xl mx-auto mb-4 font-bold">
+                            PM
+                        </div>
+                        <h4 class="text-lg font-bold text-techBlue">Usman Umar Isah</h4>
+                        <p class="text-xs font-semibold text-solarGold uppercase tracking-wider mt-1">Product Manager (PM)</p>
+                        <p class="text-xs text-gray-500 mt-2">Mai lura da kera samfuri da gamsar da abokan ciniki.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Technical Team -->
+            <div class="mt-12">
+                <h3 class="text-xl font-bold text-techNavy border-b border-gray-200 pb-2 mb-6">Sauran Kwararrun Ma'aikata (Technical & Support Team)</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+                    <div class="p-4 bg-gray-50 rounded-xl text-center border border-gray-200">
+                        <div class="w-12 h-12 bg-solarYellow text-techBlue rounded-full flex items-center justify-center font-bold mx-auto mb-htmTS</div>
+                        <h5 class="text-sm font-bold text-techBlue">Sayyid Ramadan</h5>
+                        <p class="text-[10px] text-gray-500">Tech Specialist</p>
+                    </div>
+
+                    <div class="p-4 bg-gray-50 rounded-xl text-center border border-gray-200">
+                        <div class="w-12 h-12 bg-solarYellow text-techBlue rounded-full flex items-center justify-center font-bold mx-auto mb-2">SE</div>
+                        <h5 class="text-sm font-bold text-techBlue">Abubakar Hamza</h5>
+                        <p class="text-[10px] text-gray-500">Solar Engineer</p>
+                    </div>
+
+                    <div class="p-4 bg-gray-50 rounded-xl text-center border border-gray-200">
+                        <div class="w-12 h-12 bg-solarYellow text-techBlue rounded-full flex items-center justify-center font-bold mx-auto mb-2">OS</div>
+                        <h5 class="text-sm font-bold text-techBlue">Fatima Musa</h5>
+                        <p class="text-[10px] text-gray-500">Operations Support</p>
+                    </div>
+
+                    <div class="p-4 bg-gray-50 rounded-xl text-center border border-gray-200">
+                        <div class="w-12 h-12 bg-solarYellow text-techBlue rounded-full flex items-center justify-center font-bold mx-auto mb-2">PD</div>
+                        <h5 class="text-sm font-bold text-techBlue">HumairaMuhd MK</h5>
+                        <p class="text-[10px] text-gray-500">PDF Design</p>
+                    </div>
+
+                    <div class="p-4 bg-gray-50 rounded-xl text-center border border-gray-200">
+                        <div class="w-12 h-12 bg-solarYellow text-techBlue rounded-full flex items-center justify-center font-bold mx-auto mb-2">FI</div>
+                        <h5 class="text-sm font-bold text-techBlue">Khalid Isah</h5>
+                        <p class="text-[10px] text-gray-500">Field Installer</p>
+                    </div>
+
+                    <div class="p-4 bg-gray-50 rounded-xl text-center border border-gray-200">
+                        <div class="w-12 h-12 bg-solarYellow text-techBlue rounded-full flex items-center justify-center font-bold mx-auto mb-2">EE</div>
+                        <h5 class="text-sm font-bold text-techBlue">SulaimanAuwal</h5>
+                        <p class="text-[10px] text-gray-500">Electrical Engineering</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLAR LOAD CALCULATOR -->
+    <section id="calculator" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-solarYellow">Kalkuleta Ta Lissafin Na'urar Solar</h2>
+                <p class="text-gray-300 mt-2 text-sm">Shigar da adadin kayan lantarki da kake amfani da su domin kintatar karfin Solar da KiloWatt din da kake bukata.</p>
+            </div>
+
+            <div class="mt-10 bg-techNavy p-6 sm:p-8 rounded-2xl shadow-xl border border-gray-700">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Fitilu (LED Bulbs)</label>
+                        <input type="number" id="bulbs" value="5" class="w-full bg-gray-800 border border-gray-600 rounded-lg p-3 text-white focus:outline-none focus:border-solarYellow">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Fanka (Standing Fans)</label>
+                        <input type="number" id="fans" value="2" class="w-full bg-gray-800 border border-gray-600 rounded-lg p-3 text-white focus:outline-none focus:border-solarYellow">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Akwatin TV (LED TVs)</label>
+                        <input type="number" id="tvs" value="1" class="w-full bg-gray-800 border border-gray-600 rounded-lg p-3 text-white focus:outline-none focus:border-solarYellow">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Firiji / Refrigerator</label>
+                        <input type="number" id="fridge" value="1" class="w-full bg-gray-800 border border-gray-600 rounded-lg p-3 text-white focus:outline-none focus:border-solarYellow">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Kwamfuta / Laptop</label>
+                        <input type="number" id="laptops" value="2" class="w-full bg-gray-800 border border-gray-600 rounded-lg p-3 text-white focus:outline-none focus:border-solarYellow">
+                    </div>
+                    <div class="flex items-end">
+                        <button onclick="calculateSolar()" class="w-full bg-solarYellow hover:bg-solarGold text-techBlue font-bold py-3 rounded-lg transition shadow-md">
+                            Lissafa Yanzu
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Result Box -->
+                <div id="calcResult" class="mt-8 bg-gray-800 p-6 rounded-xl border border-gray-700 hidden">
+                    <h4 class="text-solarYellow font-bold text-lg mb-2">Sakamakon Kiyasinka:</h4>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
+                        <div>
+                            <span class="text-gray-400 block text-xs">Jumlar Wutar da kake amfani:</span>
+                            <span id="totalWatts" class="text-xl font-bold">0 W</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-400 block text-xs">Inverter da aka shawarta:</span>
+                            <span id="recInverter" class="text-xl font-bold text-solarGreen">1.5 kVA</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-400 block text-xs">Adadin Batir (Lithium):</span>
+                            <span id="recBattery" class="text-xl font-bold text-solarGreen">24V 100Ah</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-techBlue">Tuntube Mu Yanzu</h2>
+                    <p class="text-gray-600 mt-2">Kuna buƙatar shawarwari ko sanya wutar Solar a gidanku ko kasuwancinku? Aiko mana da saƙo.</p>
+
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-solarYellow text-xl mt-1"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4 class="font-bold text-techBlue">Adireshinmu</h4>
+                                <p class="text-gray-600 text-sm">Setgy Engineering HQ, FCT Abuja & Kano, Nigeria.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="text-solarYellow text-xl mt-1"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4 class="font-bold text-techBlue">Sashen Email</h4>
+                                <p class="text-gray-600 text-sm">info@setgyengineering.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="text-solarYellow text-xl mt-1"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h4 class="font-bold text-techBlue">Lambar Waya</h4>
+                                <p class="text-gray-600 text-sm">+234 800 000 0000 / +234 812 345 6789</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+                    <form onsubmit="event.preventDefault(); alert('An aika sakonku! Zamu tuntube ku nan bada jimawa ba.');" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Cikakken Suna</label>
+                            <input type="text" required placeholder="Sanya sunanka" class="w-full border border-gray-300 rounded-lg p-3 text-sm focus:outline-none focus:border-solarYellow">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Email ko Lambar Waya</label>
+                            <input type="text" required placeholder="Waya ko Email" class="w-full border border-gray-300 rounded-lg p-3 text-sm focus:outline-none focus:border-solarYellow">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Saƙonka / Aikin da kake buƙata</label>
+                            <textarea rows="4" required placeholder="Yi bayanin aikin solar da kake bukata..." class="w-full border border-gray-300 rounded-lg p-3 text-sm focus:outline-none focus:border-solarYellow"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-techBlue hover:bg-techNavy text-white font-bold py-3 rounded-lg transition shadow-md">
+                            Tura Saƙo
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-techNavy text-gray-400 py-8 border-t border-gray-800 text-sm">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2023 Setgy Engineering & Solar Technologies. Duk haƙƙi ya mallaki kamfani.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT CODE -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter Projects JavaScript
+        function filterProjects(type) {
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach(card => {
+                if (type === 'all') {
+                    card.style.display = 'block';
+                } else if (card.classList.contains(type)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Solar Calculator Function
+        function calculateSolar() {
+            const bulbs = parseInt(document.getElementById('bulbs').value) || 0;
+            const fans = parseInt(document.getElementById('fans').value) || 0;
+            const tvs = parseInt(document.getElementById('tvs').value) || 0;
+            const fridge = parseInt(document.getElementById('fridge').value) || 0;
+            const laptops = parseInt(document.getElementById('laptops').value) || 0;
+
+            // Load estimations in Watts
+            const total = (bulbs * 10) + (fans * 70) + (tvs * 100) + (fridge * 250) + (laptops * 65);
+
+            document.getElementById('totalWatts').innerText = total + " Watts";
+
+            let inverter = "1.5 kVA";
+            let battery = "12V 200Ah / 24V 100Ah";
+
+            if (total > 1500) {
+                inverter = "5.0 kVA / 7.5 kVA";
+                battery = "48V 200Ah Lithium";
+            } else if (total > 800) {
+                inverter = "2.5 kVA / 3.5 kVA";
+                battery = "24V 200Ah Lithium";
+            } else if (total > 300) {
+                inverter = "1.5 kVA";
+                battery = "24V 100Ah Lithium";
+            } else {
+                inverter = "1.0 kVA";
+                battery = "12V 100Ah Gel/Lithium";
+            }
+
+            document.getElementById('recInverter').innerText = inverter;
+            document.getElementById('recBattery').innerText = battery;
+            document.getElementById('calcResult').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
